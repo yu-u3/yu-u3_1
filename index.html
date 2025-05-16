@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=" width=device- width, initial-scale=1.0">
+  <title>ページタイトルをここに入力</title>
+
+  <style>
+    /* 基本全体のスタイル */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+
+    /* 見出しのスタイル */
+    h1, h2 {
+      color: #333;
+    }
+
+    h1 {
+      border-bottom: 2px solid #888;
+      padding-bottom: 0.5rem;
+    }
+
+    /* セクションごとの箱（ステップ） */
+    .step {
+      background: white;
+      border-left: 5px solid #007ACC;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* 表のスタイル */
+    table {
+       width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    /* 画像を綺麗に表示するクラス */
+    .img-responsive {
+      max-width: 100%;     /* 親要素に合わせて縮小可 */
+      height: auto;        /* アスペクト比を保ったまま */
+      display: block;
+      margin: 1rem 0;
+      border: 1px solid #ccc;  /* 枠線（オプション） */
+      border-radius: 8px;      /* 角を丸める（任意） */
+    }
+
+    .highlight {
+    background-color: #c8c8c8;  /* 明るい黄色 */
+    padding: 0 0.3em;           /* 文字の左右に少し余白 */
+    border-radius: 4px;         /* 少し角丸に */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ページタイトル（自由に変更可） -->
+  <h1>✅ タイトルをここに入力</h1>
+
+  <!-- セクション：目的などの概要 -->
+  <div class="step">
+    <h2>📌 概要</h2>
+    <p>ここに説明文や、目的などを記入します。</p>
+  </div>
+
+  <!-- セクション：手順や説明 -->
+  <div class="step">
+    <h2>🔹 手順</h2>
+    <ol>
+    <!-- <a href="#section1"></a>はクリックすることで各項目に飛ぶことができるようにする
+     (下部に出るが<h2 id="section1">タイトル</h2>で飛ぶところを指定する) -->
+    <li><a href="#section1">はじめに</a></li>
+    <li><a href="#section2">設定一覧</a></li>
+    <li><a href="#section3">確認ポイント</a></li>
+
+    </ol>
+  </div>
+
+  <!-- セクション：画像を挿入する例 -->
+  <div class="step">
+    <!-- <h2 id="section1">タイトル</h2>で飛ぶところを指定する -->
+    <h2 id="section1">1. はじめに</h2>
+    <!-- 任意の画像ファイルを src に設定（例：images/sample.jpg） -->
+    <img src="画像のパスをここに" alt="説明文" class="img-responsive">
+    <!-- [width="500"を入力すればサイズを小さめのいいサイズにできる] -->
+    <p>※ 必要に応じて画像の説明をここに記入します。<span class="highlight">&lt;Tab&gt;</span></p>
+    
+  </div>
+
+  <!-- セクション：設定表など -->
+  <div class="step">
+    <h2 id="section2">⚙ 設定一覧</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>サンプル項目</td>
+          <td>ここに内容</td>
+        </tr>
+        <!-- 必要に応じて行を追加 -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- セクション：確認事項 -->
+  <div class="step">
+    <h2 id="section3">✅ 確認ポイント</h2>
+    <ul>
+      <li>ここに確認項目を追加</li>
+      <li>チェックリストなどに使えます</li>
+    </ul>
+  </div>
+
+</body>
+</html>
